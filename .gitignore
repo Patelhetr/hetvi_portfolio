@@ -1,5 +1,6 @@
 # Local .terraform directories
 .terraform/
+.terraform
 
 # .tfstate files
 *.tfstate
@@ -22,6 +23,7 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+hetviwebsite.json
 
 # Ignore transient lock info files created by terraform apply
 .terraform.tfstate.lock.info

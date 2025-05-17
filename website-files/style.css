@@ -1,0 +1,11 @@
+
+body {
+  scroll-behavior: smooth;
+}
+.dark-mode {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+.gradient {
+  background: linear-gradient(to right, #667eea, #764ba2);
+}

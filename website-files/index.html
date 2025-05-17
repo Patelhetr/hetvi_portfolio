@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hetvi Patel - Cloud Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-900 dark-mode:bg-gray-900 dark-mode:text-gray-100 transition-colors duration-300">
+
+  <!-- Navbar -->
+  <header class="gradient text-white py-6 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Hetvi Patel</h1>
+      <nav class="space-x-4 text-lg">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <button onclick="toggleDarkMode()" class="ml-4 border border-white px-3 py-1 rounded hover:bg-black hover:text-purple-600 transition">Toggle Mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center bg-white dark-mode:bg-gray-800 px-4" data-aos="zoom-in">
+    <h2 class="text-5xl font-extrabold mb-4">Hi, I'm Hetvi Patel</h2>
+    <p class="text-xl mb-6">Cloud Solutions Architect | DevOps Enthusiast | IT Student</p>
+    <a href="#projects" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition">View My Work</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-gray-50 dark-mode:bg-gray-700" data-aos="fade-right">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <img src="profile.jpeg" alt="Hetvi Patel" class="w-40 h-40 object-cover rounded-full shadow-lg">
+        <p class="text-lg leading-relaxed">
+          I'm an IT student at Loyalist College, passionate about cloud computing and infrastructure automation.
+          I specialize in AWS, Terraform, Docker, and am currently building multi-cloud solutions for my portfolio.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-6 bg-white dark-mode:bg-gray-800" data-aos="fade-left">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-100 dark-mode:bg-gray-700 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+          <h3 class="text-xl font-semibold mb-2">Multi-Cloud Infrastructure</h3>
+          <p>Provisioned VMs on AWS, Azure, and GCP using Terraform with automated networking and least privilege access.</p>
+        </div>
+        <div class="bg-gray-100 dark-mode:bg-gray-700 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+          <h3 class="text-xl font-semibold mb-2">Containerized Portfolio</h3>
+          <p>Designed a dynamic portfolio website with Tailwind, hosted via Docker and Podman. Deployed using Terraform on GCP.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-gray-100 dark-mode:bg-gray-900" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
+      <form class="space-y-4 max-w-lg mx-auto">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded border border-gray-300 dark-mode:border-gray-600 dark-mode:bg-gray-800" required />
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded border border-gray-300 dark-mode:border-gray-600 dark-mode:bg-gray-800" required />
+        <textarea placeholder="Your Message" class="w-full p-3 rounded border border-gray-300 dark-mode:border-gray-600 dark-mode:bg-gray-800" rows="5" required></textarea>
+        <button type="submit" class="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="gradient text-white text-center py-4">
+    <p>&copy; 2025 Hetvi Patel | All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
